@@ -1,0 +1,25 @@
+{
+  "name": "ctailwind",
+  "version": "1.0.0",
+  "description": "Herramientas  - NPM es el sistema de gestión de paquetes por defecto para Node.js  - Autoprefixer es una libreria que nos ayuda poder agregar a nuestro codigo el ventorprefixer  - PostCSS  - Instalamos la extension \"Tailwind CSS IntelliSense\" en nuestro VScode",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpmjim/CTailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpmjim/CTailwind/issues"
+  },
+  "homepage": "https://github.com/jpmjim/CTailwind#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.3",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.9"
+  }
+}
