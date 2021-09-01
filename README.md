@@ -18,6 +18,7 @@ Inicilizamos las librerias instaladas:
 
 Editamos los siguientes archivos:
   - postcss.config.js con
+      ```javascript
       module.exports = {
         plugins: [
           require('tailwindcss'),
@@ -27,19 +28,23 @@ Editamos los siguientes archivos:
 
   - Creamos un carpeta con su archivo -- css/tailwind.css el nombre del archivo puede ser cualquiera 
     y dentro del archivo agregamos lo siguiente:
+      ```css
       @tailwind base;
       @tailwind components;
       @tailwind utilities;
+      ```
     que es un directiva que agrega el codigo base de tailwind que hace que todo funcione, tailwind.css es nuestro archivo css origen
-  - Creamos una carpeta con su archivo -- public/index.html 
 
+  - Creamos una carpeta con su archivo -- public/index.html 
     inicializamos el archivo con:
       html:5 se agrega estructura html
 
   - Creamos nuestro archivo css destino con un comando npm, editamos el archivo packge.json parte de 
     scripts :
+      ```json
       "scripts": {
         "build": "postcss css/tailwind.css -o public/css/style.css"
       },
+      ```
     nos vamos a la terminal y lo ejecutamos con "npm run build" nos genera el archivo public/css/style.css el cual debe tener contenido.
 
